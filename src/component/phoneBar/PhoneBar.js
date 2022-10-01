@@ -18,7 +18,6 @@ const PhoneBar = () => {
                }
                return singlePhone;
             })
-            console.log(phoneData);
             setPhone(phoneData)
          })
    }, [])

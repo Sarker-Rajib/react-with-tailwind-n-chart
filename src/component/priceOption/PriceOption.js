@@ -5,13 +5,13 @@ const PriceOption = ({ option }) => {
    const { feature } = option;
 
    return (
-      <div className="bg-red-400 m-3 p-4 rounded">
+      <div className="bg-purple-600 m-3 p-4 rounded">
          <div>
             <h3>
-               <span className="text-4xl">{option.price}$</span>
-               <span>/month</span>
+               <span className="text-4xl text-white font-bold">{option.price}$</span>
+               <span className="text-white">/month</span>
             </h3>
-            <p className="text-green-200 text-2xl">{option.name}</p>
+            <p className="text-cyan-50 text-2xl">{option.name}</p>
          </div>
 
          {
@@ -20,7 +20,7 @@ const PriceOption = ({ option }) => {
                feature={feature}></Feature>)
          }
 
-         <button className="bg-green-600 p-2 rounded-md w-full font-bold mt-32 text-white">Buy Now</button>
+         <button className="bg-green-600 p-2 rounded-md w-full font-bold mt-8 text-white">Buy Now</button>
       </div>
    );
 };
